@@ -1,0 +1,10 @@
+@ -0,0 +1,14 @@
+<h3>Cliente</h3>
+<form (submit)="addCliente()" >
+ 
+</form>
+<h4 *ngIf="misclientes.length==0">No hay datos</h4>
+<ul>
+  <li *ngFor="let item of misclientes">
+  </li>
+</ul>

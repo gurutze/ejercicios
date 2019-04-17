@@ -1,0 +1,12 @@
+@ -0,0 +1,14 @@
+<form (submit)="addLisrado()" >
+  <input type="text" [(ngModel)]="listado.text"
+         [ngModelOptions]="{standalone: true}"/>
+</form>
+<h3>Listado</h3>
+<h4 *ngIf="listado.length==0">No hay datos</h4>
+<ul>
+  <li *ngFor="let item of todos">
+    {{item.text}}<button (click)="deleteListado(item.text)" >Borrar</button>
+  </li>
+</ul>
